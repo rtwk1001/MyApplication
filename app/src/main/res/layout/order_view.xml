@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/order_item_background"
+    tools:context="incture.com.myapplication.ui.MainActivity">
+
+    <TextView
+        android:id="@+id/txtOrderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Order ID"/>
+
+    <TextView
+        android:id="@+id/txtOrderItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Items"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOrderID"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Name"/>
+
+    <LinearLayout
+        android:layout_below="@+id/txtName"
+        android:background="@drawable/blue_background"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="View"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="0.03"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Call"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="0.03"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Locate"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
